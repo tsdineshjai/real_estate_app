@@ -1,11 +1,16 @@
+@import "../../responsive.scss";
+
 .searchBar {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 	width: 89%;
-
 	padding: 2rem 0;
+
+	@include sm {
+		align-items: center;
+		gap: 0.5rem;
+	}
 
 	.buyandRent {
 		button {
@@ -32,6 +37,7 @@
 
 	.form {
 		display: flex;
+		flex-direction: row;
 		gap: 2px;
 		input {
 			flex: 1;
@@ -46,6 +52,24 @@
 				font-weight: 300;
 				color: rgba(1, 1, 21, 0.5);
 			}
+
+			@media (max-width: 1331px) {
+				width: 95%;
+			}
+		}
+
+		@include sm {
+			flex-direction: column;
+			padding: 6px 6px;
+			button {
+				width: fit-content;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 0.25rem;
+				border-radius: 5px;
+			}
+			justify-content: center;
+			align-items: center;
 		}
 
 		button {
