@@ -1,0 +1,65 @@
+.homepage {
+	display: flex;
+	height: 100%;
+
+	.textContainer {
+		flex: 3;
+		height: inherit;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		gap: 3rem;
+		flex-direction: column;
+
+    h1{
+      font-family: monospace;
+      font-size: 27px;
+    }
+
+    p{
+      padding-right: 5.5rem;
+      font-weight: 100;
+      font-size: 16px;
+      color: rgba(10, 10, 10, 0.5);
+    }
+
+		section {
+			display: flex;
+      width: 100%;
+			gap: 2rem;
+      padding-right: 75px;
+      justify-content: space-between;
+			.box {
+				display: flex;
+				flex-direction: column;
+				gap: 0.05rem;
+        justify-content: center;
+        align-items: center;
+
+				h2 {
+					font-size: 35px;
+          text-align: center;
+				}
+
+				h5 {
+					font-size: 11px;
+          font-weight: 300;
+          color: darkgreen;
+				}
+			}
+		}
+	}
+
+	.imageContainer {
+		position: relative;
+		flex: 2;
+		background-color: rgb(236, 233, 217);
+		padding-left: 0.35rem;
+
+		img {
+			width: 110%;
+			position: absolute;
+      right:0;
+		}
+	}
+}

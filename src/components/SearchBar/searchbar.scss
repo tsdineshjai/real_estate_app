@@ -1,0 +1,70 @@
+.searchBar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	width: 89%;
+
+	padding: 2rem 0;
+
+	.buyandRent {
+		button {
+			padding: 16px 32px;
+			border: none;
+			outline: yellow 1.5px solid;
+			text-transform: uppercase;
+
+			&:first-child {
+				border-right: none;
+				border-top-left-radius: 5px;
+			}
+			&:last-child {
+				border-left: none;
+				border-top-right-radius: 5px;
+			}
+		}
+
+		.active {
+			background-color: black;
+			color: white;
+		}
+	}
+
+	.form {
+		display: flex;
+		gap: 2px;
+		input {
+			flex: 1;
+			padding: 8px 12px;
+
+			&:focus {
+				outline: rgb(21, 91, 8) 1.5px solid;
+				outline-color: yellow;
+			}
+
+			&::placeholder {
+				font-weight: 300;
+				color: rgba(1, 1, 21, 0.5);
+			}
+		}
+
+		button {
+			background-color: rgb(217, 217, 110);
+			border: solid 1px blue;
+			cursor: pointer;
+			color: black;
+			display: grid;
+			place-items: center;
+			padding: 5px 10px;
+			outline: none;
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+			box-shadow: 3px 3px 3px rgb(219, 206, 206);
+			transition: all 0.2s ease-in-out;
+
+			&:hover {
+				transform: scale(1.02);
+			}
+		}
+	}
+}
