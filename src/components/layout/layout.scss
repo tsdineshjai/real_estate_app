@@ -1,0 +1,31 @@
+@import "../../responsive.scss";
+
+.layout {
+	color: black;
+	height: 100vh;
+	max-width: 1366px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	display: flex;
+	flex-direction: column;
+	@include lg {
+		background-color: rgb(42, 98, 98);
+		color: black;
+	}
+
+	@include md {
+		background-color: rgb(101, 180, 70);
+		color: rgb(99, 11, 11);
+	}
+	@include sm {
+		background-color: rgb(123, 237, 73);
+		color: rgb(9, 9, 81);
+	}
+
+	.content {
+		flex: 1;
+		// min-height =  calc(100vh -10vh) also works. 10vh height of navbar
+	}
+}

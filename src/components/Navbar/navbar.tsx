@@ -1,15 +1,18 @@
 import React from "react";
 import "./navbar.scss";
+import { Link } from "react-router-dom";
 
 function Navbar() {
 	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 	return (
 		<nav>
 			<div className="left">
-				<a className="logo">
-					<img src="logo.png" alt="" />
-					<span>TaSri_Estate</span>
-				</a>
+				<Link to="/">
+					<a className="logo">
+						<img src="logo.png" alt="" />
+						<span>TaSri_Estate</span>
+					</a>
+				</Link>
 				<section className="navsubgroup">
 					<a>Home</a>
 					<a>About</a>
